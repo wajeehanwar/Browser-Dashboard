@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="A Customizable Google.com Clone">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Google,">
+  <meta name="author" content="Wajeeh Anwar">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Start Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <button type="button" id="settings-button">&#9881;</button>
+    <div id="settings-window" class="settings-window">
+      <div class="settings-content">
+        <div class="settings-header">
+          <span class="close-settings">&times;</span>
+          <h2>Settings</h2>
+        </div>
+        <div class="settings-body">
+          <div id="current-user-label"></div>
+          <div class="current-user"></div>
+          <div id="additional-users-label"></div>
+          <div class="additional-users">
+            <ul class="user-list"></ul>
+          </div>
+          <div id="settings-buttons">
+            <button type="button" class="settings-button" id="new-user-button">Add User</button>
+            <button type="button" class="settings-button" id="reset-users-button">Reset Users</button>
+          </div>
+          <div id="new-user-window" class="new-user-window">
+            <div class="new-user-content">
+              <div id="new-user-label">
+                <h3>Create New User</h3>
+              </div>
+              <form id="new-user-form">
+                <div>
+                  <label class="nu-label">First Name: </label>
+                  <input type="text" class="nu-name" id="nu-first-name">
+                </div>
+                <div>
+                  <label class="nu-label">Last Name: </label>
+                  <input type="text" class="nu-name" id="nu-last-name">
+                </div>
+                <div class="custom-select">
+                  <label class="nu-label">Country: </label>
+                  <select id="nu-country">
+                    <option value="USA">USA</option>
+                    <option value="China">China</option>
+                  </select>
+                </div>
+                <div class="custom-select">
+                  <label class="nu-label">Date of Birth: </label>
+                  <select id="nu-dob-day"></select>
+                  <select id="nu-dob-month"></select>
+                </div>
+              </form>
+              <div id="nu-error"></div>
+              <div class="nu-save">
+                <input class="settings-button nu-save-button" type="submit" value="Create" onclick="addNewUser(event);">
+              </div>
+              <div class="settings-footer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="settings-footer"></div>
+      </div>
+    </div>
+  </header>
+  <section class="container">
+    <h1 class="welcome"></h1>
+    <form id="search-form">
+      <div id="google-logo"></div>
+      <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="googlelogo">
+      <input id="search-bar" type="text">
+      <input class="search-button button" type="submit" value="Google Search" onclick="onSubmit(event);">
+    </form>
+    <h2 class="message"></h2>
+  </section>
+  <script src="javascript/main.js"></script>
+</body>
+
+</html>

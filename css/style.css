@@ -77,6 +77,7 @@ body {
 
 .message {
   margin-top: 100px;
+  margin-bottom: 20px;
   color: white;
   text-align: center;
 }
@@ -289,4 +290,64 @@ body {
 
 .nu-save-button {
   background: dodgerblue;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+  }
+
+  .container {
+    margin: auto;
+  }
+  .welcome {
+    text-align: center;
+    font-size: 16pt;
+    margin-bottom: auto;
+  }
+
+  #google-logo {
+    max-width: 50%;
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+
+  #search-form {
+    padding: none;
+  }
+
+  #search-bar {
+    min-width: 100%;
+    max-width: 100%;
+    background-size: 18px;
+    background-position: 5px;
+    font-size: 12pt;
+    text-indent: 1em;
+    padding: 0.6em;
+    margin: 0;
+  }
+
+
+  .button {
+    margin-top: 20px;
+  }
+
+  #settings-button {
+    right: 5px;
+    top: 5px;
+    font-size: 20pt;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+  }
+
+  .message {
+    margin-top: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12pt;
+  }
 }

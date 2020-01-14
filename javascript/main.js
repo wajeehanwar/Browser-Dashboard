@@ -1,8 +1,28 @@
 /**
  *
- * long description for the file
+ * A responsive Google search page clone that has been converted into a
+ * minimalist and personalized browser dashboard.
  *
- * @summary short description for the file
+ * Features:
+ *     Multiple locally stored user profiles for privacy.
+ *         Create multiple user profiles.
+ *         Validation for all user fields being filled.
+ *         Validation preventing the creation of duplicate user profiles.
+ *         View active profile.
+ *         View all created user profiles.
+ *         Set active user profile.
+ *         Remove user profiles.
+ *         Remove all locally stored users.
+ *     Display personalized greeting based on local time of day.
+ *     Perform Google search queries.
+ *     Display personalized message.
+ *         Display rendomized motivational quotes
+ *         Display country-based holiday wishes.
+ *         Display birthday wish.
+ *
+ *
+ * @summary A responsive Google search page clone that has been converted into
+ *          a minimalist and personalized browser dashboard
  * @author Wajeeh Anwar
  *
  * Created at     : 2020-01-11
